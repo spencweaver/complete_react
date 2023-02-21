@@ -1,0 +1,8 @@
+Django
+djangorestframework
+# django-dotenv>=1.4.2,<1.5
+python-dotenv
+# pandas>=1.4.1,<1.5
+pandas
+psycopg2
+SQLAlchemy
