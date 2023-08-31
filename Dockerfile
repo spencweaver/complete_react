@@ -1,6 +1,6 @@
 FROM node:18-buster
 
-WORKDIR /docker/app
+WORKDIR /app
 
 # RUN yes | unminimize
 
@@ -22,3 +22,4 @@ RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 
 RUN npm i -g cowsay
 
+RUN npm install html2canvas jspdf
