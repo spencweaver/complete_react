@@ -1,3 +1,5 @@
+import './categories.styles.scss'
+
 const App = () => {
 
   const categories = [
@@ -12,8 +14,8 @@ const App = () => {
   ]
   return (
     <div className="categories-container">
-      {categories.map(({title}) => (
-        <div className="category-container">
+      {categories.map(({title, id}) => (
+        <div key={id} className="category-container">
           <img className='background-image' src='https://media.istockphoto.com/id/523633973/photo/golden-retriever-puppy.jpg?s=612x612&w=is&k=20&c=buTVqvXlrNTEXa0ywk98FsL0azTa9-YcoeCRJb3pwws=' />
           <div className="category-body-container">
             <h2>{title}</h2>
